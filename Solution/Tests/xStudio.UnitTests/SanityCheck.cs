@@ -7,7 +7,9 @@ using Xunit;
 
 namespace xStudio.UnitTests
 {
+    // ReSharper disable TestClassNameSuffixWarning
     public class SanityCheck
+    // ReSharper restore TestClassNameSuffixWarning
     {
         [Fact]
         public void Pass()
