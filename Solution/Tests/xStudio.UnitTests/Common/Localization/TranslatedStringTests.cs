@@ -21,7 +21,7 @@ namespace xStudio.UnitTests.Common.Localization
             var html = str as IHtmlString;
 
             html.ShouldNotBeNull();
-            "blah".ShouldBe(html.ToHtmlString());
+            html.ToHtmlString().ShouldBe("blah");
         }
 
         [Fact]
@@ -52,7 +52,7 @@ namespace xStudio.UnitTests.Common.Localization
         public void ItsAnImplicitString()
         {
             string str = new TranslatedString("blah");
-            "blah".ShouldBe(str);
+            str.ShouldBe("blah");
         }
     }
 }
