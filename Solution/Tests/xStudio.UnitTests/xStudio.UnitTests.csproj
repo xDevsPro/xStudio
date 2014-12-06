@@ -86,6 +86,8 @@
     <Compile Include="Common\Localization\LocalizationExtensionsTests.cs" />
     <Compile Include="Common\Localization\NullLocalizerTests.cs" />
     <Compile Include="Common\Localization\TranslatedStringTests.cs" />
+    <Compile Include="Domain\EntityTests.cs" />
+    <Compile Include="Domain\ValueObjectTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SanityTests.cs" />
   </ItemGroup>
@@ -105,6 +107,7 @@
       <Name>xStudio.Domain</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
